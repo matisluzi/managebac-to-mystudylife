@@ -461,7 +461,9 @@ class loginWindow(QWidget):
 
 def exitApp():
     global browser
-    browser.close()
+    browser.quit()
+    global app
+    app.quit()
 
 if __name__ == "__main__":
     try:
@@ -471,4 +473,7 @@ if __name__ == "__main__":
     except Exception as e:
         print("Error: ", e)
         global browser
-        browser.close()
+        try:
+            browser.quit()
+        except:
+            pass
