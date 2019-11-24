@@ -2,7 +2,6 @@
 convert managebac events to mystudylife
 
 How to use: 
-
 !!! make sure you're using Python 3 !!!
 
 1. Install Selenium and PyQt5 using pip 
